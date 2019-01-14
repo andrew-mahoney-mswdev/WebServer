@@ -1,0 +1,59 @@
+#centerPage {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	height: 300px;
+  	width: 1000px;
+  	margin-top: -150px;
+  	margin-left: -500px;
+}
+
+.titleLine {
+	text-align: center;
+	font-size: 600%;
+}
+
+.miniTitle {
+	font-size: 200%;
+	margin-right: 25px;
+}
+
+#textbox { /* Declared as an id as two of these will overlap. */
+	text-align: center;
+	position: absolute;
+	left:50%;
+	width: 600px;
+	margin-left: -300px;
+}
+
+.noselect { /* Prevents text from being highlighted. This is necessary for the colours game. */
+    -webkit-user-select: none;
+}
+
+.invisibleLink { /* Prevents underline on link. */
+	text-decoration: none
+}
+
+.search {
+	font-size: 150%
+}
+
+.topalign {
+	vertical-align: top;
+}
+
+.blue{
+	color: blue;
+}
+
+.red{
+	color: red;
+}
+
+.yellow{
+	color: #f4c20d; /* Dark yellow */
+}
+
+.green {
+	color: green;
+}
