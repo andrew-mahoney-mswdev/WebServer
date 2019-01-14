@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>About this page</title>
+<body>
+<h3>About this page</h3>
+<p>This is a search engine, but it only has one hundred web pages.  Most of them are about politics, so if you search for names of New Zealand politicians or political parties, it should return some results.  A few of the pages are about science.</p>
+<p>After searching, you can search again using the search box on the results page or you can click on the word "hundred" to be taken back to the main page.  A JavaScript game can be played with the coloured letters on the main page.</p>
+<p>The following tools have been used to develop this website:</p>
+<p>HTML - The files index.html, instructions.html, and about.html contain static HTML code.  A variety of tags are used, including &lt;p&gt;, &lt;br&gt, &lt;img&gt, &lt;a&gt, &lt;div&gt, &lt;span&gt, &lt;form&gt, &lt;script&gt and &lt;link&gt.  The file results.html contains dynamically generated HTML (see below) and also uses &lt;table&gt tags.</p>
+<p>CSS - The file style.css contains css code to control the layout of the pages.  Some functions of note include: #centrePage, which centres elements in your browser window; #textBox, which allows elements to be displayed neatly in an invisible box; .noselect, which prevents text from being highlighted (this was necessary to ensure that the game was playable); and .invisibleLink, which prevents a hyperlink from being underlined and is used for the word "hundred" on the results page.</p>
+<p>JavaScript - The file game.js contains the code for the game.  Every letter in the word "hundred" is represented by a variable.  Event listeners listen for clicks and change the class of a letter, causing a colour change.  When the page is loaded it randomly assigns a number to each letter (representing the "connections" between letters), while ensuring that letters are not connected to themselves.  The page index.html also contains a JavaScript function at the top which allows this popup window to be displayed.</p>
+<p>Java - The file Search.java is a class called by the server, which performs search operations.  The 100 text files in the data folder contain the text of 100 web pages.  The class checks whether the first word of the search string entered by the user appears on these pages.  It dynamically creates the file results.html as it does, including links to all pages that contain the word, before serving the file to the user.  A JavaScript command at the bottom of the results page allows the number of pages found to be included at the top, even though the top code is written before the search commences.</p>
+<p>Something else - We were also asked to do "something else".  I hope that putting all of the above tools together to create a search engine that outputs dynamic html is interesting and original enough for this.</p>
+</body>
+</html>
